@@ -1,0 +1,49 @@
+.div-1, .div-2, .div-3 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.outer{
+    width:20vw;
+    height: 20vh;
+}
+
+.div-btn{
+
+    width: 10vw;
+    height: 10vh;;
+    font-size: 4vh;
+}
+
+.main-div{
+    padding-top:10vh;
+}
+
+#b-1{
+    background-color: lightsalmon;
+}
+#b-2{
+    background-color: yellow;
+}
+#b-3{
+    background-color: lightgreen;
+}
+#b-4{
+    background-color: aqua;
+}
+#b-5{
+    background-color: orange;
+}
+#b-6{
+    background-color: lightpink;
+}
+#b-7{
+    background-color: lightcoral;
+}
+#b-8{
+    background-color: burlywood;
+}
+#b-9{
+    background-color: lightseagreen;
+}
