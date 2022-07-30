@@ -1,0 +1,9 @@
+.styling{
+    display: flex;
+    justify-content: space-around;    
+
+}
+
+.submit-btn{
+    text-align: center;
+}
