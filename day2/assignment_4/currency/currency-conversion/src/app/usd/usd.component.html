@@ -1,0 +1,58 @@
+<div>
+  <h1 class="main-div">
+    Welcome to currency conversion!!!
+  </h1> 
+  <h2 class="main-div">We allow 5 currency conversion:</h2>
+  <h3 class="main-div">*** INR , USD , CAD, EURO, AED *** </h3>
+  <div>
+    <div >     
+      <form [formGroup]="formData" (ngSubmit)="onSubmitToServer(formData)">
+        <div class="main-div">
+          <div class="currency_section_1">
+            <h3 for="currency_1">Choose 1st Currency</h3>
+            <div>
+            <input type="number" formControlName="number_1" [value]="myInputNumber" />
+            <!-- <div></div> -->
+            &nbsp;&nbsp;&nbsp;
+            <select formControlName="currency_1" id="currency_1">
+              <option [value]="null" disabled selected>Select 1st Currency</option>
+              <option [value]="INR" >INR</option>
+              <option [value]="USD" >USD</option>
+              <option [value]="CAD" >CAD</option>
+              <option [value]="AED" >AED</option>
+              <option [value]="EURO" >EURO</option>
+            </select>
+            </div>
+            <br><br>
+          </div>
+          <div class="currency_section_2">
+            <h3 for="currency_2">Choose 2nd Currency</h3>
+            <div>
+            <input type="text" formControlName="number_2" placeholder="output is ..." readonly [value]=currency_final />
+            &nbsp;&nbsp;&nbsp;
+            <select formControlName="currency_2" id="currency_2">
+              <option [value]="null" disabled selected>Select 2nd Currency</option>
+              <option [value]="INR" >INR</option>
+              <option [value]="USD" >USD</option>
+              <option [value]="CAD" >CAD</option>
+              <option [value]="AED" >AED</option>
+              <option [value]="EURO" >EURO</option>
+            </select>
+            </div>
+            <br><br>
+          </div>
+        </div>
+        <div class="main-div">
+          <input type="submit" id="form-submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+    <div>
+    <h2 class="main-div">
+        Output obtained from conversion is ...
+    </h2>
+        <h2 class="main-div">{{currency_obtained}}</h2>
+        <h2 class="main-div">{{currency_obtained_complete}}</h2>
+    </div>
+</div>

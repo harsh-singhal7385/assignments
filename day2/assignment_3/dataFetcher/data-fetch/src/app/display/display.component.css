@@ -1,0 +1,19 @@
+.main-div{
+    display: flex;
+    justify-content: space-around ;
+}
+
+.mystyle{
+    border:1px solid orange;
+    padding:1vh 1vw;
+}
+
+#child{
+    background-color: lightgreen;
+    padding: 5vh 2vw;
+}
+
+.mytable{
+    background-color: rgba(0, 0, 10);
+    color: white;
+}

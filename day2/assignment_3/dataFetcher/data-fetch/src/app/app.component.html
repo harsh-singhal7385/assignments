@@ -1,0 +1,15 @@
+<div class="body-div">
+  <div >
+    <h1 class="main-div" id="parent">Welcome to parent component - {{title}}!!!</h1>
+    <h2 class="main-div" id="parent-inner">
+      Click Below Button to load data in child component...
+    </h2>
+  </div>
+  <div class="main-div"  >
+    <button type="button" id="btn" (click)="loadDataFromServices()" >Load Data</button>
+  </div>
+  <div >
+    <app-display [childDataArrived] = "data"></app-display>
+  </div>
+</div> 
+<router-outlet></router-outlet>

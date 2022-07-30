@@ -1,0 +1,25 @@
+.main-div{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+
+#btn{
+   padding:2vh 2vw;
+   font-size: 3vh;
+   background-color: aqua;
+}
+
+#parent{
+    background-color: lightcoral;
+    padding: 5vh 2vw;
+}
+
+#parent-inner{
+    background-color: yellow;
+    padding: 0 2vw;
+}
+
+.body-div{
+    background-color: yellow;
+}
