@@ -1,0 +1,14 @@
+<div class="display-data">
+    <table class="table-style"> 
+        <tr class="table-style">
+            <th class="table-style">ID</th>
+            <th class="table-style">Name</th>
+            <th class="table-style">Date of birth</th>
+        </tr>
+        <tr *ngFor="let item of data">
+            <td class="table-style">{{item.id}}</td>
+            <td class="table-style">{{item.name}}</td>
+            <td class="table-style">{{item.date}}</td>
+        </tr>
+    </table>
+</div>

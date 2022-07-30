@@ -1,0 +1,22 @@
+<div class="display-data">
+    <form [formGroup]="formData" (ngSubmit)="SubmitToParent(formData)">
+        <div class="display-data">
+            <div>
+                <input type="radio" formControlName="sort" [value]="name_sort" />  
+                <p>Sort by name</p> 
+            </div>
+            <div>
+                <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                
+            </div>
+            <div>
+                <input type="radio" formControlName="sort" [value]="age_sort" />
+                <p>Sort by age / date of birth</p>
+            </div> 
+        </div>
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</div>
+

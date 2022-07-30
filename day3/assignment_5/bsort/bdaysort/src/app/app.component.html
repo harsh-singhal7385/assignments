@@ -1,0 +1,12 @@
+<div>
+  <div>
+    <h1 class="display-data">Welcome to API Fetcher to display sorted data!!!</h1>
+  </div>
+  <div >
+    <app-radio-child (childData) = "receiveFromRadioFn($event)"></app-radio-child>
+  </div>
+  <div >
+    <app-table-child [parentToChild]="sort_criteria"></app-table-child>
+  </div>
+</div>
+<router-outlet></router-outlet>
